@@ -14,7 +14,8 @@
         alt="Лого сайта «Седона».">
     </a>
     <nav class="form-nav">
-      <button class="form-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      <button class="form-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="form-nav__list">
         <li class="site-list__item site-list__item-current">
@@ -34,8 +35,9 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">Страница формы сайта Седона</h1>
-
+    <section class="form-banner">
+      <h1 class="form-banner__title">Sedona</h1>
+    </section>
     <section class="leave-feedback">
       <h2 class="leave-feedback__title">Оставьте свой отзыв</h2>
       <p class="leave-feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о
@@ -46,25 +48,28 @@
     <section class="info">
       <form class="info__form" action="https://echo.htmlacademy.ru/" method="post">
 
-        <div class="info__field--name info__field">
-          <h3 class="info__field__title">Представьтесь</h3>
-          <input class="info__field__input--name info__field__input" placeholder="Петр" name="firstname" type="text">
-          <input class="info__field__input--name info__field__input" placeholder="Пустота" name="lastname" type="text">
-          <input class="info__field__input--name info__field__input" placeholder="Викторович" name="middlename"
-            type="text">
-        </div>
-
-        <div class="info__field--contacts info__field">
-          <h3 class="info__field__title">Контактная информация:</h3>
-          <div class="info__field__group">
-            <label class="info__field__group__label" for="phone">Контактный телефон*:</label>
-            <input class="info__field__group__input--contacts info__field__group__input" type="number" id="phone"
-              name="phone" placeholder="Введите телефон">
+        <div class="info__contact">
+          <div class="info__field--name info__field">
+            <h3 class="info__field__title">Представьтесь</h3>
+            <input class="info__field__input--name info__field__input" placeholder="Петр" name="firstname" type="text">
+            <input class="info__field__input--name info__field__input" placeholder="Пустота" name="lastname"
+              type="text">
+            <input class="info__field__input--name info__field__input" placeholder="Викторович" name="middlename"
+              type="text">
           </div>
-          <div class="info__field__group">
-            <label class="info__field__group__label" for="email">Электронная почта</label>
-            <input class="info__field__group__input--contacts info__field__group__input" type="email" id="email"
-              name="email" placeholder="Введите e-mail">
+
+          <div class="info__field--contacts info__field">
+            <h3 class="info__field__title">Контактная информация:</h3>
+            <div class="info__field__group">
+              <label class="info__field__group__label" for="phone">Контактный телефон*:</label>
+              <input class="info__field__group__input--contacts info__field__group__input" type="number" id="phone"
+                name="phone" placeholder="Введите телефон">
+            </div>
+            <div class="info__field__group">
+              <label class="info__field__group__label" for="email">Электронная почта</label>
+              <input class="info__field__group__input--contacts info__field__group__input" type="email" id="email"
+                name="email" placeholder="Введите e-mail">
+            </div>
           </div>
         </div>
 
@@ -130,8 +135,8 @@
         </fieldset>
 
         <fieldset class="feedback">
-          <legend class="info__field__title">Опишите свои эмоции:</legend>
-          <input class="feedback__input" type="text" id="feedback" placeholder="Опишите подробно все свои восторги ">
+          <label class="info__field__title" for="feedback">Опишите свои эмоции:</label>
+          <textarea class="feedback__text" id="feedback" name="feedback" rows="" cols="">Опишите подробно все свои восторги</textarea>
           <div class="feedback__send">
             <button class="button--send-form button" type="submit">Отправить отзыв</button>
             <p class="feedback__send__note">* — обязательные поля</p>
@@ -156,7 +161,7 @@
       <div class="form-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/Html-logo" alt="Лого html academy">
+          <img class="copyright__logo" src="img/html-logo.svg" alt="Лого html academy">
         </a>
       </div>
     </footer>
