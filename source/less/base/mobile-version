@@ -1,0 +1,14 @@
+@import "./variables.less";
+
+.text-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PTsans", sans-serif;
+  font-weight: 700;
+  color: @darker-color;
+}
+
+.text-description {
+  font-size: 14px;
+  line-height: 21px;
+}

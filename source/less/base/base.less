@@ -1,0 +1,55 @@
+@import "./variables.less";
+@import "./fonts.less";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 321px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PTsans", sans-serif;
+  font-weight: 400;
+  background-color: @primary-color;
+  color: @black-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dd {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
