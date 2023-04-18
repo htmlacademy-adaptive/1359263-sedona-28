@@ -3,31 +3,31 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Форма</title>
 </head>
 
 <body class="page__body">
   <header class="form-header header">
-    <a class="form-header__logo">
-      <img class="form-header__logo-image" src="img/logotype-phone.svg" width="185" height="96"
+    <a class="header__link">
+      <img class="header__logo" src="img/logo-type-phone.svg" width="185" height="96"
         alt="Лого сайта «Седона».">
     </a>
-    <nav class="form-nav">
-      <button class="form-nav__toggle" type="button">
+    <nav class="navigation">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="form-nav__list">
-        <li class="site-list__item site-list__item-current">
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item-current">
           <a>Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="navigation__item">
           <a>Фото и видео</a>
         </li>
-        <li class="site-list__item">
+        <li class="navigation__item">
           <a>Форма отзыва</a>
         </li>
-        <li class="site-list__item">
+        <li class="navigation__item">
           <a>Html Academy</a>
         </li>
       </ul>
@@ -35,9 +35,14 @@
   </header>
 
   <main>
-    <section class="form-banner">
-      <h1 class="form-banner__title">Sedona</h1>
+    <h1 class="visually-hidden">Раздел формы сайта Седоны.</h1>
+
+    <section class="catalog-banner">
+      <h2 class="visually-hidden">Седона</h2>
+      <img class="catalog__picture" src="img/banner-catalog.png" width="320" height="158"
+        alt="Фотография каньона Седона.">
     </section>
+
     <section class="leave-feedback">
       <h2 class="leave-feedback__title">Оставьте свой отзыв</h2>
       <p class="leave-feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,а также о
@@ -51,9 +56,12 @@
         <div class="info__contact">
           <div class="info__field--name info__field">
             <h3 class="info__field__title">Представьтесь</h3>
+            <label class="info__field__group__label" for="firstname">ИМЯ*:</label>
             <input class="info__field__input--name info__field__input" placeholder="Петр" name="firstname" type="text">
+            <label class="info__field__group__label" for="lastname">ФАМИЛИЯ*:</label>
             <input class="info__field__input--name info__field__input" placeholder="Пустота" name="lastname"
               type="text">
+              <label class="info__field__group__label" for="middlename">Отчество:</label>
             <input class="info__field__input--name info__field__input" placeholder="Викторович" name="middlename"
               type="text">
           </div>
@@ -80,21 +88,21 @@
               <label class="filter__label">
                 <input class="filter__input visually-hidden" type="radio" name="radio">
                 <span class="filter__mark--feeling filter__mark"></span>
-                <span>Скорее положительное</span>
+                <span class="filter__span">Скорее положительное</span>
               </label>
             </li>
             <li>
               <label class="control">
                 <input class="filter__input visually-hidden" type="radio" name="radio" checked>
                 <span class="filter__mark--feeling filter__mark"></span>
-                <span>Скорее отрицательное</span>
+                <span class="filter__span">Скорее отрицательное</span>
               </label>
             </li>
             <li>
               <label class="control">
                 <input class="filter__input visually-hidden" type="radio" name="radio">
                 <span class="filter__mark--feeling filter__mark"></span>
-                <span>Затрудняюсь ответить</span>
+                <span class="filter__span">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -107,28 +115,28 @@
               <label class="filter__label">
                 <input class="filter__input visually-hidden" type="radio" name="radio">
                 <span class="filter__mark filter__mark--attraction"></span>
-                <span>Мост Дьявола</span>
+                <span class="filter__span">Мост Дьявола</span>
               </label>
             </li>
             <li>
               <label class="control">
                 <input class="filter__input visually-hidden" type="radio" name="radio" checked>
                 <span class="filter__mark filter__mark--attraction"></span>
-                <span>Гора-Колокол</span>
+                <span class="filter__span">Гора-Колокол</span>
               </label>
             </li>
             <li>
               <label class="control">
                 <input class="filter__input visually-hidden" type="radio" name="radio">
                 <span class="filter__mark filter__mark--attraction"></span>
-                <span>Слайд-парк</span>
+                <span class="filter__span">Слайд-парк</span>
               </label>
             </li>
             <li>
               <label class="control">
                 <input class="filter__input visually-hidden" type="radio" name="radio">
                 <span class="filter__mark filter__mark--attraction"></span>
-                <span>Красные скалы</span>
+                <span class="filter__span">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -138,16 +146,16 @@
           <label class="info__field__title" for="feedback">Опишите свои эмоции:</label>
           <textarea class="feedback__text" id="feedback" name="feedback" rows="" cols="">Опишите подробно все свои восторги</textarea>
           <div class="feedback__send">
-            <button class="button--send-form button" type="submit">Отправить отзыв</button>
+            <button class="button--primary button" type="submit">Отправить отзыв</button>
             <p class="feedback__send__note">* — обязательные поля</p>
           </div>
         </fieldset>
       </form>
     </section>
 
-    <footer class="form-footer">
-      <p class="form-footer__tag">#VISITSEDONA</p>
-      <ul class="form-footer__social-list social-list">
+    <footer class="footer">
+      <p class="footer__tag">#VISITSEDONA</p>
+      <ul class="footer__social-list social-list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
         </li>
@@ -158,7 +166,7 @@
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
         </li>
       </ul>
-      <div class="form-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="img/html-logo.svg" alt="Лого html academy">
