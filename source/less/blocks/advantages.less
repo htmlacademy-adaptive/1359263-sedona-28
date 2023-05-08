@@ -15,16 +15,18 @@
 .advantages__item {
   color: @darker-color;
   text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
 }
 
 .advantages__item--motel::before {
-  content: url("../../img/icon-house-mobile.svg");
+  background-image: url("../../img/icon-house-mobile.svg");
 }
 
 .advantages__item--food::before {
-  content: url("../../img/icon-burger-mobile.svg");
+  background-image: url("../../img/icon-burger-mobile.svg");
 }
 
 .advantages__item--souvenirs::before {
-  content: url("../../img/icon-gift-mobile.svg");
+  background-image: url("../../img/icon-gift-mobile.svg");
 }
