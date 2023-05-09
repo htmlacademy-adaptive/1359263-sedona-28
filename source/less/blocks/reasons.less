@@ -1,5 +1,6 @@
 @import "../base/variables.less";
 @import "../base/fonts.less";
+@import "../base/viewports.less";
 
 .reason__block {
   min-width: 284px;
@@ -17,3 +18,34 @@
 .reason__block--white {
   background-color: @gray;
 }
+
+.reasons__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: @darker-color;
+  text-align: center;
+}
+
+.reasons__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 484px;
+  }
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+

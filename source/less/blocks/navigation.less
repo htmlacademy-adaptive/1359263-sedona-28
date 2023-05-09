@@ -7,15 +7,34 @@
   color: @primary-color;
   font-size: 18px;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__item {
+  display: block;
+  text-align: center;
+  padding: 17px 78px;
 }
 
 @media (min-width: @tablet-width) {
-  .header {
-    display: flex;
-    width: 768px;
+  .navigation__list {
+    flex-direction: row;
+  }
+
+  .navigation__item {
+    min-width: 153px;
+    padding: 18px 24px;
   }
 
   .navigation__toggle {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .navigation__item {
+    min-width: 240px;
+    padding: 18px 68px;
   }
 }
