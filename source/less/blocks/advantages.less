@@ -1,0 +1,32 @@
+@import "../base/variables.less";
+@import "../base/fonts.less";
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__item {
+  color: @darker-color;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+
+.advantages__item--motel::before {
+  background-image: url("../../img/icon-house-mobile.svg");
+}
+
+.advantages__item--food::before {
+  background-image: url("../../img/icon-burger-mobile.svg");
+}
+
+.advantages__item--souvenirs::before {
+  background-image: url("../../img/icon-gift-mobile.svg");
+}

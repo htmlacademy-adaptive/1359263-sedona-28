@@ -1,0 +1,21 @@
+@import "../base/variables.less";
+@import "../base/fonts.less";
+@import "../base/viewports.less";
+
+.navigation__list {
+  background-color: @blue;
+  color: @primary-color;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    display: flex;
+    width: 768px;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+}
