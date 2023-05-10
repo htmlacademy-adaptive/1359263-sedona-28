@@ -1,7 +1,13 @@
 @import "../../base/fonts.less";
 @import "../../base/variables.less";
+@import "../../base/viewports.less";
 
-.catalog-banner {
+.catalog__picture {
   background-color: @brown-color;
-  min-height: 158px;
+  width: 100%;
+  height: 158px;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
 }

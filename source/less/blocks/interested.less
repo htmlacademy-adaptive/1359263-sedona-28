@@ -1,12 +1,32 @@
 @import "../base/variables.less";
 @import "../base/fonts.less";
+@import "../base/viewports.less";
 
 .interested {
-  min-width: 262px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .interested__title {
   font-size: 21px;
   font-weight: 700;
   color: @darker-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.interested__description {
+  width: 262px;
+
+  @media (min-width: @tablet-width) {
+    width: 435px;
+  }
 }
