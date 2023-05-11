@@ -1,0 +1,38 @@
+@import "../../base/fonts.less";
+@import "../../base/variables.less";
+@import "../../base/viewports.less";
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.text-title--review {
+  width: 279px;
+  height: 150px;
+  background-color: @light-gray;
+  color: #0000004d;
+  padding: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
+}
+
+.review__send {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

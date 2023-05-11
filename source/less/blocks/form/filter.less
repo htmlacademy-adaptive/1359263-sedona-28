@@ -1,8 +1,31 @@
 @import "../../base/fonts.less";
 @import "../../base/variables.less";
+@import "../../base/viewports.less";
 
 .filter__span {
   font-size: 18px;
   font-weight: 700;
   color: @darker-color;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    gap: 16px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
