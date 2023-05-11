@@ -16,11 +16,6 @@
 .advantages__item {
   color: @darker-color;
   text-transform: uppercase;
-  position: relative;
-}
-
-.advantages__item--motel::before {
-  background-image: url("../../img/icon-house-mobile.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
@@ -29,6 +24,10 @@
   top: 0;
   left: 0;
   display: inline-block;
+}
+
+.advantages__item--motel::before {
+  background-image: url("../../img/icon-house-mobile.svg");
 }
 
 .advantages__item--food::before {
@@ -42,6 +41,7 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
