@@ -20,6 +20,20 @@
   }
 }
 
+.reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
+}
+
 .reason__block--blue {
   background-color: @blue;
   color: @primary-color;
@@ -37,8 +51,6 @@
 }
 
 .reasons__wrapper {
-  display: flex;
-  flex-direction: column;
   width: 284px;
 
   @media (min-width: @tablet-width) {
@@ -67,6 +79,10 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: reverse;
   }
 }
 
