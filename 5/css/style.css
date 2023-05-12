@@ -281,6 +281,7 @@ a {
 .reason {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .reason {
@@ -343,10 +344,6 @@ a {
 .advantages__item {
   color: #000000;
   text-transform: uppercase;
-  position: relative;
-}
-.advantages__item--motel::before {
-  background-image: url("../../img/icon-house-mobile.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 40px;
@@ -355,6 +352,9 @@ a {
   top: 0;
   left: 0;
   display: inline-block;
+}
+.advantages__item--motel::before {
+  background-image: url("../../img/icon-house-mobile.svg");
 }
 .advantages__item--food::before {
   background-image: url("../../img/icon-burger-mobile.svg");
@@ -365,6 +365,7 @@ a {
 .advantages__list {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 @media (min-width: 768px) {
   .advantages__list {
@@ -403,10 +404,8 @@ a {
   }
 }
 .map__picture {
-  background-color: #EEEEEE;
-}
-.map__picture {
   width: 100%;
+  background-color: #EEEEEE;
   height: 350px;
 }
 .catalog__picture {
