@@ -1,13 +1,17 @@
 @import "../base/variables.less";
 @import "../base/fonts.less";
+@import "../base/viewports.less";
 
 .header {
-  background-color: @primary-color;
+  background-color: @blue;
   color: @brown-color;
   font-size: 18px;
   font-weight: 700;
   position: relative;
-  height: 56px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @primary-color;
+  }
 }
 
 .header__link {
@@ -16,4 +20,5 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
