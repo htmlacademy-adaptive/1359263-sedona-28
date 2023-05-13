@@ -1,16 +1,55 @@
 @import "../base/variables.less";
 
 .reason-list {
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.reason-list__wrapper {
   display: flex;
   flex-direction: column;
+  padding: 24px 18px 28px 18px;
+  background-color: @gray;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-around;
     background-color: @gray;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+  }
+}
+
+.reason__block--white {
+  background-color: @gray;
+  padding: 24px 26px;
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 33px 63px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px;
+  }
+}
+
+.reason-list .reason__block {
+  border-bottom: 1px solid @border-bottom;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text-title--reason-list {
+    font-size: 21px;
+    text-align: center;
   }
 }

@@ -5,14 +5,19 @@
 .interested {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .interested__title {
   font-size: 21px;
   font-weight: 700;
   color: @darker-color;
+  padding-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -23,8 +28,12 @@
   }
 }
 
-.interested__description {
+.interested__wrapper {
+  margin-bottom: 32px;
   width: 262px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     width: 435px;

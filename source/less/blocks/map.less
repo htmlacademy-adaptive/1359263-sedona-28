@@ -1,7 +1,14 @@
 @import "../base/variables.less";
+@import "../base/viewports.less";
 
-.map__picture {
+.map iframe {
+  border: none;
+  display: block;
   width: 100%;
-  background-color: @gray;
   height: 350px;
+  margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
