@@ -3,15 +3,18 @@
 
 .banner {
   background-color: @blue;
-  background-image: url("../../img/main-banner-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-width: 320px;
-  height: 389px;
-  margin-bottom: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 320px;
+}
+
+.banner--main {
+  background-image: url("../../img/main-banner-background.png");
+  height: 389px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     height: 518px;
