@@ -11,11 +11,11 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__link">
-      <img class="header__logo" src="img/logo-type-phone.svg" width="185" height="96" alt="Лого сайта «Седона».">
+    <a class="header__logo">
+      <img src="img/logo-type-phone.svg" width="185" height="96" alt="Лого сайта «Седона».">
     </a>
-    <nav class="navigation">
-      <button class="navigation__toggle" type="button">
+    <nav class="navigation navigation--closed navigation--nojs">
+      <button class="navigation__toggle unstyle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="navigation__list unstyle">
@@ -23,13 +23,13 @@
           <a>Главная</a>
         </li>
         <li class="navigation__item">
-          <a>Фото и видео</a>
+          <a href="./catalog.html">Фото и видео</a>
         </li>
         <li class="navigation__item">
-          <a>Форма отзыва</a>
+          <a href="./form.html">Форма отзыва</a>
         </li>
         <li class="navigation__item">
-          <a>Html Academy</a>
+          <a href="https://htmlacademy.ru">Html Academy</a>
         </li>
       </ul>
     </nav>
@@ -37,7 +37,7 @@
 
   <main class="main-container">
 
-    <section class="banner">
+    <section class="banner--main banner">
       <img class="banner__tagline" src="img/main-banner-tagline.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
     </section>
@@ -53,7 +53,7 @@
     <section class="reason reason--real-city">
       <h2 class="visually-hidden">Город, в котором живут реальные жители, а не туристы</h2>
       <div class="reason__block reason__block--blue">
-        <dt class="text-title--white text-title">Настоящий городок</dt>
+        <dt class="text-title--reason-blue text-title">Настоящий городок</dt>
         <dd class="text-description reason__block__number unstyle">— №1 —</dd>
         <dd class="text-description--reason-block text-description unstyle">Седона не аттракцион для туристов, там течет
           своя жизнь</dd>
@@ -63,31 +63,29 @@
     </section>
 
     <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества городка</h2>
-        <ul class="advantages__list unstyle">
-          <li class="advantages__item advantages__item--motel">
-            <h3 class="text-title">Жилье</h3>
-            <p class="text-description--reason-block text-description unstyle">Рекомендуем пожить в настоящем мотеле,
-              все как в кино!</p>
-          </li>
-          <li class="advantages__item advantages__item--food">
-            <h3 class="text-title">Еда</h3>
-            <p class="text-description--reason-block text-description unstyle">Всегда заказывайте фирменный бургер, Вы
-              не разочаруетесь!</p>
-          </li>
-          <li class="advantages__item advantages__item--souvenirs">
-            <h3 class="text-title">Сувениры</h3>
-            <p class="text-description--reason-block text-description unstyle">Не только китайского, но и местного
-              производства!</p>
-          </li>
-        </ul>
-      </div>
+      <h2 class="visually-hidden">Преимущества городка</h2>
+      <ul class="advantages__list unstyle">
+        <li class="advantages__item advantages__item--motel">
+          <h3 class="text-title--advantages text-title">Жилье</h3>
+          <p class="text-description--reason-block text-description unstyle">Рекомендуем пожить в настоящем мотеле,
+            все как в кино!</p>
+        </li>
+        <li class="advantages__item advantages__item--food">
+          <h3 class="text-title--advantages text-title">Еда</h3>
+          <p class="text-description--reason-block text-description unstyle">Всегда заказывайте фирменный бургер, Вы
+            не разочаруетесь!</p>
+        </li>
+        <li class="advantages__item advantages__item--souvenirs">
+          <h3 class="text-title--advantages text-title">Сувениры</h3>
+          <p class="text-description--reason-block text-description unstyle">Не только китайского, но и местного
+            производства!</p>
+        </li>
+      </ul>
     </section>
 
     <section class="reason reason--devil-bridge">
       <div class="reason__block reason__block--blue">
-        <dt class="text-title--white text-title">Там есть Мост дьявола</dt>
+        <dt class="text-title--reason-blue text-title">Там есть Мост дьявола</dt>
         <dd class="text-description reason__block__number unstyle">— №2 —</dd>
         <dd class="text-description--reason-block text-description unstyle">Да, по нему можно пройти! Если вы
           осмелитесь, конечно</dd>
@@ -98,37 +96,45 @@
 
     <section class="reason-list">
       <h2 class="visually-hidden">Еще больше преимуществ</h2>
-      <div class="reason__block reason__block--white">
-        <dt class="text-title">Не большая площадь</dt>
-        <dd class="text-description reason__block__number unstyle">— №3 —</dd>
-        <dd class="text-description--reason-block text-description unstyle">ВСЕ интересные места находятся очень близко
-        </dd>
-      </div>
-      <div class="reason__block reason__block--white">
-        <dt class="text-title">Красивая дорога</dt>
-        <dd class="text-description reason__block__number unstyle">— №4 —</dd>
-        <dd class="text-description--reason-block text-description unstyle">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ
-          СКУЧНО!</dd>
-      </div>
-      <div class="reason__block reason__block--white">
-        <dt class="text-title">Мало туристов</dt>
-        <dd class="text-description reason__block__number unstyle">— №5 —</dd>
-        <dd class="text-description--reason-block text-description unstyle">Большинство едет в гранд каньон и толпится
-          там</dd>
+      <div class="reason-list__wrapper">
+        <div class="reason__block reason__block--white">
+          <dt class="text-title--reason-list text-title">Не большая площадь</dt>
+          <dd class="text-description reason__block__number unstyle">— №3 —</dd>
+          <dd class="text-description--reason-block text-description unstyle">ВСЕ интересные места находятся очень
+            близко
+          </dd>
+        </div>
+        <div class="reason__block reason__block--white">
+          <dt class="text-title--reason-list text-title">Красивая дорога</dt>
+          <dd class="text-description reason__block__number unstyle">— №4 —</dd>
+          <dd class="text-description--reason-block text-description unstyle">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ
+            СКУЧНО!</dd>
+        </div>
+        <div class="reason__block reason__block--white">
+          <dt class=" text-title--reason-list text-title">Мало туристов</dt>
+          <dd class="text-description reason__block__number unstyle">— №5 —</dd>
+          <dd class="text-description--reason-block text-description unstyle">Большинство едет в гранд каньон и толпится
+            там</dd>
+        </div>
       </div>
     </section>
 
     <section class="interested">
-      <h2 class="interested__title unstyle">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-      <p class="interested__description text-description unstyle">Укажите предполагаемые даты поездки, и мы покажем вам
-        лучшие предложения
-        гостиниц в седоне</p>
+      <div class="interested__wrapper">
+        <h2 class="interested__title unstyle">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="text-description unstyle">Укажите предполагаемые даты поездки, и мы покажем
+          вам лучшие предложения гостиниц в седоне</p>
+      </div>
       <a class="button--primary button" href="#">Найти гостиницу</a>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img class="map__picture" src="img/map-mobile.png" width="320" height="350" alt="Карта штата Аризоны">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13688468822!2d-111.83633831587164!3d34.854441888363695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2sus!4v1683941913851!5m2!1sru!2sus"
+        width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
 
     <footer class="footer">
@@ -168,6 +174,7 @@
       </div>
     </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
