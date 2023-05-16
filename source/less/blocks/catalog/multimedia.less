@@ -63,11 +63,15 @@
   }
 }
 
-.multimedia__item:first-child {
+.multimedia__item__picture:first-child {
   width: 100%;
 }
 
 .multimedia__item--wide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     grid-column: span 2;
   }
