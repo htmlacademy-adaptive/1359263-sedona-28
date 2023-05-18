@@ -5,10 +5,18 @@
 .video-blog__preview {
   background-image: url("../../../img/video-preview.png");
   background-repeat: no-repeat;
-  background-size: 280px 177px;
   background-position: center;
   width: 280px;
   height: 177px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
 }
 
 .video-blog {
@@ -19,8 +27,14 @@
 
 .text-description--video-blog {
   width: 266px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     width: 445px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 63px;
   }
 }
