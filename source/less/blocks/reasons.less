@@ -55,6 +55,11 @@
   font-weight: 700;
   color: @darker-color;
   text-align: center;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .reasons__wrapper {
@@ -85,27 +90,23 @@
   margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row-reverse;
     margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    flex-direction: reverse;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .reason--devil-bridge {
+    flex-direction: row-reverse;
+  }
+
+  .reason--real-city {
+    flex-direction: row;
+  }
+}
+
+
 .reason__picture {
   width: 100%;
-  height: 260px;
-
-  @media (min-width: @tablet-width) {
-    height: 256px;
-    min-width: 512px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-width: 800px;
-  }
 }
 
 .text-description--reason-block {

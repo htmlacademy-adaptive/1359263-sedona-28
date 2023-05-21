@@ -129,7 +129,14 @@
       <p class="text-description--video-blog text-description unstyle">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <a class="video-blog__preview unstyle"></a>
+      <a class="unstyle" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/catalog-video-desktop.jpg" width="800" height="500">
+          <source media="(min-width: 768px)" srcset="img/catalog-video-tablet.jpg" width="648" height="500">
+          <img class="video-blog__picture" src="img/catalog-video.jpg" width="280px" height="177"
+          alt="Play video">
+        </picture>
+      </a>
     </section>
 
     <footer class="footer">
