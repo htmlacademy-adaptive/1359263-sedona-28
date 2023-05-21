@@ -36,6 +36,12 @@
   }
 }
 
+@media (min-width: @mobile-width-only) {
+  .navigation__item-empty {
+    display: none;
+  }
+}
+
 .navigation--closed .navigation__toggle::before {
   content: "";
   position: absolute;

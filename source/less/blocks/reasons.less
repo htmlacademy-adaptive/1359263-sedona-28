@@ -39,6 +39,7 @@
   color: @primary-color;
   padding-top: 37px;
   padding-bottom: 37px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding-top: 52px;
@@ -106,8 +107,12 @@
 
 
 .reason__picture {
-  width: 100%;
   height: auto;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: fit-content;
+  }
 }
 
 .text-description--reason-block {
