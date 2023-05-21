@@ -1,3 +1,17 @@
-@import "../../base/fonts.less";
 @import "../../base/variables.less";
 @import "../../base/viewports.less";
+
+.banner--form {
+  background-image: url("../../../img/main-banner-background.png");
+  height: 158px;
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    height: 462px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 115px;
+  }
+}

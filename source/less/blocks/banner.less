@@ -12,17 +12,36 @@
 }
 
 .banner--main {
-  background-image: url("../../img/main-banner-background.png");
+  background-image: url("../../img/main-banner-background.jpg");
   height: 389px;
   margin-bottom: 32px;
 
-  @media (min-width: @tablet-width) {
-    height: 518px;
-    margin-bottom: 47px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/main-banner-background@2x.jpg");
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
+  .banner--main {
+    background-image: url("../../img/main-banner-background-tablet.jpg");
+    background-size: 768px auto;
+    margin-bottom: 47px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/main-banner-background-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner--main {
     margin-bottom: 59px;
+    background-image: url("../../img/main-banner-background-desktop.jpg");
+    background-size: 1200px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/main-banner-background-desktop@2x.jpg");
+    }
   }
 }
 

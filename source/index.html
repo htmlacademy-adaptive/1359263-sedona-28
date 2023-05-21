@@ -37,8 +37,12 @@
   <main class="main-container">
 
     <section class="banner--main banner">
-      <img class="banner__tagline" src="img/main-banner-tagline.svg" width="282" height="214"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/main-banner-tagline-desktop.svg" width="460" height="350">
+        <source media="(min-width: 768px)" srcset="img/main-banner-tagline-tablet.svg" width="461" height="350">
+        <img class="banner__tagline" src="img/main-banner-tagline.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
+      </picture>
     </section>
 
     <section class="reasons">

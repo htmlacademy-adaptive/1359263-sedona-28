@@ -102,6 +102,9 @@
     background-color: @primary-color;
     color: @blue;
     width: 768px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-area: nav nav empty nav nav;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,6 +125,7 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     border: none;
+    grid-area: nav;
   }
 }
 

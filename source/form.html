@@ -55,14 +55,14 @@
 
         <div class="info__contact">
           <div class="info__field--name info__field">
-            <h3 class="info__field__title unstyle">Представьтесь</h3>
+            <h3 class="info__field__title unstyle">Представьтесь:</h3>
             <label class="info__field__group__label" for="firstname">ИМЯ*:</label>
-            <input class="info__field__input--name info__field__input" placeholder="Петр" name="firstname" type="text">
+            <input class="info__input--name info__input" placeholder="Петр" name="firstname" type="text">
             <label class="info__field__group__label" for="lastname">ФАМИЛИЯ*:</label>
-            <input class="info__field__input--name info__field__input" placeholder="Пустота" name="lastname"
+            <input class="info__input--name info__input" placeholder="Пустота" name="lastname"
               type="text">
             <label class="info__field__group__label" for="middlename">Отчество:</label>
-            <input class="info__field__input--name info__field__input" placeholder="Викторович" name="middlename"
+            <input class="info__input--name info__input" placeholder="Викторович" name="middlename"
               type="text">
           </div>
 
@@ -70,37 +70,37 @@
             <h3 class="info__field__title unstyle">Контактная информация:</h3>
             <div class="info__field__group">
               <label class="info__field__group__label" for="phone">Контактный телефон*:</label>
-              <input class="info__field__group__input--contacts info__field__group__input" type="number" id="phone"
+              <input class="info__input--phone info__input--contacts info__input" type="number" id="phone"
                 name="phone" placeholder="Введите телефон">
             </div>
             <div class="info__field__group">
-              <label class="info__field__group__label" for="email">Электронная почта</label>
-              <input class="info__field__group__input--contacts info__field__group__input" type="email" id="email"
+              <label class="info__field__group__label" for="email">Электронная почта*:</label>
+              <input class="info__input--email info__input--contacts info__input" type="email" id="email"
                 name="email" placeholder="Введите e-mail">
             </div>
           </div>
         </div>
 
-        <fieldset class="filter">
+        <fieldset class="filter--feeling filter unstyle">
           <legend class="info__field__title">Ваше общее впечатление</legend>
           <ul class="filter__list unstyle">
             <li>
-              <label class="filter__label">
-                <input class="filter__input visually-hidden" type="radio" name="radio">
+              <label class="control">
+                <input class="control__input visually-hidden" type="radio" name="radio" checked>
                 <span class="filter__mark--feeling filter__mark"></span>
                 <span class="filter__span">Скорее положительное</span>
               </label>
             </li>
             <li>
               <label class="control">
-                <input class="filter__input visually-hidden" type="radio" name="radio" checked>
+                <input class="control__input visually-hidden" type="radio" name="radio" checked>
                 <span class="filter__mark--feeling filter__mark"></span>
                 <span class="filter__span">Скорее отрицательное</span>
               </label>
             </li>
             <li>
               <label class="control">
-                <input class="filter__input visually-hidden" type="radio" name="radio">
+                <input class="control__input visually-hidden" type="radio" name="radio">
                 <span class="filter__mark--feeling filter__mark"></span>
                 <span class="filter__span">Затрудняюсь ответить</span>
               </label>
@@ -108,33 +108,33 @@
           </ul>
         </fieldset>
 
-        <fieldset class="filter">
+        <fieldset class="filter unstyle">
           <legend class="info__field__title">Посещенные достопримечательности:</legend>
           <ul class="filter__list unstyle">
             <li>
-              <label class="filter__label">
-                <input class="filter__input visually-hidden" type="radio" name="radio">
+              <label class="control">
+                <input class="control__input visually-hidden" type="checkbox" name="Мост Дьявола" checked>
                 <span class="filter__mark filter__mark--attraction"></span>
                 <span class="filter__span">Мост Дьявола</span>
               </label>
             </li>
             <li>
               <label class="control">
-                <input class="filter__input visually-hidden" type="radio" name="radio" checked>
+                <input class="control__input visually-hidden" type="checkbox" name="Гора-Колокол" checked>
                 <span class="filter__mark filter__mark--attraction"></span>
                 <span class="filter__span">Гора-Колокол</span>
               </label>
             </li>
             <li>
               <label class="control">
-                <input class="filter__input visually-hidden" type="radio" name="radio">
+                <input class="control__input visually-hidden" type="checkbox" name="Слайд-парк" checked>
                 <span class="filter__mark filter__mark--attraction"></span>
                 <span class="filter__span">Слайд-парк</span>
               </label>
             </li>
             <li>
               <label class="control">
-                <input class="filter__input visually-hidden" type="radio" name="radio">
+                <input class="control__input visually-hidden" type="checkbox" name="Красные скалы">
                 <span class="filter__mark filter__mark--attraction"></span>
                 <span class="filter__span">Красные скалы</span>
               </label>
@@ -142,9 +142,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review">
-          <label class="info__field__title" for="feedback">Опишите свои эмоции:</label>
-          <textarea class="text-title--review text-title unstyle" id="feedback" name="feedback" rows=""
+        <fieldset class="review unstyle">
+          <label class="info__field__title--review info__field__title" for="feedback">Опишите свои эмоции:</label>
+          <textarea class="review__description unstyle" id="feedback" name="feedback" rows=""
             cols="">Опишите подробно все свои восторги</textarea>
           <div class="review__send">
             <button class="button--primary button" type="submit">Отправить отзыв</button>
