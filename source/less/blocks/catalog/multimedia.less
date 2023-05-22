@@ -43,8 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid @decorative-line;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 0;
@@ -61,6 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -146,9 +146,11 @@
 
 .multimedia__item:first-child {
   padding-top: 24px;
+  border-top: 1px solid @decorative-line;
 
   @media (min-width: @tablet-width) {
     justify-content: inherit;
+    border-top: none;
     padding-top: 0;
   }
 }
