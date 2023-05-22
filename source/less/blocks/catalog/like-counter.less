@@ -1,14 +1,32 @@
 @import "../../base/fonts.less";
 @import "../../base/variables.less";
 
+.like-counter {
+  display: flex;
+  align-items: baseline;
+}
+
 .like-counter__number {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  color: @darker-color;
 }
 
-.like-counter__button {
+.like-counter--button {
   background-image: url("../../../img/like-icon.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: 23px 21px;
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../../img/like-icon-white.svg");
+  }
 }

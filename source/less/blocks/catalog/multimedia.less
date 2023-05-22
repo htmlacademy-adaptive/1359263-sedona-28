@@ -25,6 +25,12 @@
 
 .multimedia__item__picture {
   background-color: @brown-color;
+  position: relative;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .multimedia__item__title {
@@ -32,11 +38,20 @@
   line-height: 21px;
   font-weight: 700;
   color: @darker-color;
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    color: @primary-color;
+  }
 }
 
 .multimedia__item__autor {
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: @desktop-width) {
+    color: @primary-color;
+  }
 }
 
 .multimedia__text {
@@ -63,7 +78,7 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 648px;
+    width: auto;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
@@ -74,6 +89,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: auto auto auto;
     grid-template-rows: 400px 267px;
+    min-width: 400px;
   }
 }
 
@@ -101,13 +117,41 @@
   justify-content: flex-start;
 
   @media (min-width: @tablet-width) {
-    width: 324px;
+    min-width: 324px;
+    min-height: 80px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    background-color: @light-gray;
+    padding: 22px 20px 15px 20px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 400px;
+    min-width: 400px;
+    background-color: @darker-color;
+    opacity: 0.3;
+    padding: 17px 20px 17px 25px;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+  }
+}
+
+.multimedia__item__description div {
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.multimedia__item__description--north {
+  @media (min-width: @tablet-width) {
+    background-color: @dark-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @darker-color;
   }
 }
 
@@ -118,13 +162,19 @@
 
 .multimedia {
   margin-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 61px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
