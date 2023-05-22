@@ -11,11 +11,8 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo">
-      <img src="img/logo-type-phone.svg" width="185" height="96" alt="Лого сайта «Седона».">
-    </a>
     <nav class="navigation navigation--closed navigation--nojs">
-      <button class="navigation__toggle unstyle" type="button">
+      <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="navigation__list unstyle">
@@ -25,6 +22,7 @@
         <li class="navigation__item">
           <a href="./catalog.html">Фото и видео</a>
         </li>
+        <li class="navigation__item navigation__item-empty"></li>
         <li class="navigation__item">
           <a href="./form.html">Форма отзыва</a>
         </li>
@@ -33,13 +31,20 @@
         </li>
       </ul>
     </nav>
+    <a class="header__logo" href="./index.html">
+      <img src="img/logo-type-phone.svg" width="185" height="96" alt="Лого сайта «Седона».">
+    </a>
   </header>
 
   <main class="main-container">
 
     <section class="banner--main banner">
-      <img class="banner__tagline" src="img/main-banner-tagline.svg" width="282" height="214"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/main-banner-tagline-desktop.svg" width="460" height="350">
+        <source media="(min-width: 768px)" srcset="img/main-banner-tagline-tablet.svg" width="461" height="350">
+        <img class="banner__tagline" src="img/main-banner-tagline.svg" width="282" height="214"
         alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
+      </picture>
     </section>
 
     <section class="reasons">
@@ -58,8 +63,12 @@
         <dd class="text-description--reason-block text-description unstyle">Седона не аттракцион для туристов, там течет
           своя жизнь</dd>
       </div>
-      <img class="reason__picture" src="img/sedona-city.png" width="320" height="260"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-city-desktop.jpg" width="800" height="256">
+        <source media="(min-width: 768px)" srcset="img/sedona-city-tablet.jpg" width="512" height="256">
+        <img class="reason__picture" src="img/sedona-city.jpg" width="320" height="260"
         alt="Город Седона в котором живут обычные жители">
+      </picture>
     </section>
 
     <section class="advantages">
@@ -90,8 +99,12 @@
         <dd class="text-description--reason-block text-description unstyle">Да, по нему можно пройти! Если вы
           осмелитесь, конечно</dd>
       </div>
-      <img class="reason__picture" src="img/sedona-bridge.png" width="320" height="260"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-bridge-desktop.jpg" width="800" height="256">
+        <source media="(min-width: 768px)" srcset="img/sedona-bridge-tablet.jpg" width="512" height="256">
+        <img class="reason__picture" src="img/sedona-bridge.jpg" width="320" height="260"
         alt="Фотография скальных образований красного цвета, каньонов и хвойных деревьев.">
+      </picture>
     </section>
 
     <section class="reason-list">
