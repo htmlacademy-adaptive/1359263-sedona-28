@@ -1,13 +1,23 @@
-@import "./variables.less";
+@import "../base/variables.less";
+@import "../base/viewports.less";
 
 .text-title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  font-family: "PTsans", "Arial", sans-serif;
   color: @darker-color;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .text-description {
   font-size: 14px;
   line-height: 21px;
+  font-family: "PTsans", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
 }

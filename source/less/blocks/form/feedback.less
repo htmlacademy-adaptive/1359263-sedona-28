@@ -1,26 +1,41 @@
 @import "../../base/fonts.less";
 @import "../../base/variables.less";
+@import "../../base/viewports.less";
 
-.leave-feedback__title {
-  font-size: 18px;
-  font-weight: 700;
-  color: @darker-color;
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 28px;
+  border-bottom: 1px solid @decorative-line;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 108px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+  }
 }
 
-.leave-feedback__description {
-  font-size: 14px;
-  line-height: 21px;
+.feedback h2 {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 31px;
+  }
 }
 
-.feedback__send__note {
-  font-size: 12px;
-  line-height: 21px;
-  color: hsla(0, 0%, 20%, 0.6);
-}
+.text-description--feedback {
+  width: 280px;
 
-.feedback__text {
-  background-color: @light-gray;
-  color: hsla(0, 0%, 0%, 0.3);
-  min-width: 279px;
-  padding: 16px;
+  @media (min-width: @tablet-width) {
+    width: 435px;
+  }
 }

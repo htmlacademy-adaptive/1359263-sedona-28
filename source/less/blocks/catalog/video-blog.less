@@ -1,19 +1,27 @@
 @import "../../base/fonts.less";
 @import "../../base/variables.less";
+@import "../../base/viewports.less";
 
-.video-blog__title {
-  font-size: 21px;
-  font-weight: 700;
-  color: @darker-color;
+.video-blog__picture {
+  background-color: @brown-color;
 }
 
-.video-blog__description {
-  font-size: 18px;
-  font-weight: 700;
+.video-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.video-blog__preview {
-  background-image: url("../../../img/video-preview.png");
-  background-repeat: no-repeat;
-  background-size: 280px 177px;
+.text-description--video-blog {
+  width: 266px;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 445px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 63px;
+  }
 }

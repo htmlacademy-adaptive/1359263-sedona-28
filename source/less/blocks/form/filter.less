@@ -1,8 +1,77 @@
 @import "../../base/fonts.less";
 @import "../../base/variables.less";
+@import "../../base/viewports.less";
 
 .filter__span {
   font-size: 18px;
   font-weight: 700;
   color: @darker-color;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid @decorative-line;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.filter__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 16px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+  margin-bottom: 26px;
+  height: 46px;
+  padding-top: 10px;
+}
+
+.filter__mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-size: 46px 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+}
+
+.filter__mark--feeling {
+  background-image: url("../../../img/filter-radio-button.svg");
+}
+
+.control__input[type="radio"]:checked + .filter__mark--feeling {
+  background-image: url("../../../img/filter-radio-button-check.svg");
+}
+
+.filter__mark--attraction {
+  background-image: url("../../../img/filter-box-button.svg");
+}
+
+.control__input[type="checkbox"]:checked + .filter__mark--attraction {
+  background-image: url("../../../img/filter-box-button-checked.svg");
 }

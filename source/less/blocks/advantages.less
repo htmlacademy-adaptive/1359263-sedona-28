@@ -1,5 +1,6 @@
 @import "../base/variables.less";
 @import "../base/fonts.less";
+@import "../base/viewports.less";
 
 .advantages__title {
   font-weight: 700;
@@ -16,7 +17,53 @@
   color: @darker-color;
   text-transform: uppercase;
   background-repeat: no-repeat;
+  width: 237px;
+  margin-bottom: 25px;
+  padding-left: 47px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 60px;
+    width: 256px;
+    min-height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    min-height: 192px;
+    margin-top: 69px;
+  }
+}
+
+.advantages__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantages__item::before {
+  content: "";
+  left: -47px;
+  margin-left: 18px;
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 40px 40px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin-left: 0;
+    background-size: 77px 72px;
+    width: 77px;
+    height: 72px;
+  }
 }
 
 .advantages__item--motel::before {
@@ -29,4 +76,40 @@
 
 .advantages__item--souvenirs::before {
   background-image: url("../../img/icon-gift-mobile.svg");
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.text-description--reason-block {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
+
+.advantages {
+  margin-bottom: 46px;
+}
+
+.text-title--advantages {
+  margin-top: 8px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 21px;
+  }
 }

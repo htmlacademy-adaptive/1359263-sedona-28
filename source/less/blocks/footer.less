@@ -1,5 +1,27 @@
 @import "../base/variables.less";
 @import "../base/fonts.less";
+@import "../base/viewports.less";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 235px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 36px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 120px;
+  }
+}
 
 .footer__tag {
   font-weight: 700;

@@ -1,18 +1,27 @@
 @import "../base/variables.less";
 @import "../base/fonts.less";
+@import "../base/viewports.less";
 
 .button {
   font-weight: 700;
-  font-size: 50px;
+  font-size: 21px;
   line-height: 26px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
+  display: inline-block;
 }
 
 .button--primary {
   background-color: @blue;
   color: @primary-color;
-  padding: 16px 49px;
+  padding-top: 16px;
+  width: 284px;
+  height: 58px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
 }

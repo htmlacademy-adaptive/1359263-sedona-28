@@ -6,126 +6,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__link">
-      <img class="header__logo" src="img/logo-type-phone.svg" width="185" height="96"
-        alt="Лого сайта «Седона».">
-    </a>
-    <nav class="navigation">
+    <nav class="navigation navigation--closed navigation--nojs">
       <button class="navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="navigation__list unstyle">
-        <li class="navigation__item navigation__item-current">
-          <a>Главная</a>
-        </li>
         <li class="navigation__item">
+          <a href="./index.html">Главная</a>
+        </li>
+        <li class="navigation__item navigation__item-current">
           <a>Фото и видео</a>
         </li>
+        <li class="navigation__item navigation__item-empty"></li>
         <li class="navigation__item">
-          <a>Форма отзыва</a>
+          <a href="./form.html">Форма отзыва</a>
         </li>
         <li class="navigation__item">
-          <a>Html Academy</a>
+          <a href="https://htmlacademy.ru">Html Academy</a>
         </li>
       </ul>
     </nav>
+    <a class="header__logo" href="./index.html">
+      <img src="img/logo-type-phone.svg" width="185" height="96" alt="Лого сайта «Седона».">
+    </a>
   </header>
 
-  <main>
+  <main class="main--multimedia">
     <h1 class="visually-hidden">Раздел фото и видео сайта Седоны.</h1>
 
-    <section class="catalog-banner">
+    <section class="banner--catalog banner">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="catalog__picture" src="img/banner-catalog.png" width="320" height="158"
-        alt="Фотография каньона Седона.">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/catalog-banner-tagline-desktop.svg" width="460" height="80">
+        <source media="(min-width: 768px)" srcset="img/catalog-banner-tagline-tablet.svg" width="457" height="78">
+        <img class="catalog-banner__tagline" src="img/catalog-banner-tagline.svg" width="229px" height="39"
+          alt="website Sedona">
+      </picture>
     </section>
 
-    <section class="multimedia">
-      <h2 class="multimedia__title">Фото и видео</h2>
-      <p class="multimedia__discription">
-        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-      </p>
+    <section class="multimedia block-center">
+      <div class="multimedia__text">
+        <h2 class="text-title--multimedia text-title unstyle">Фото и видео</h2>
+        <p class="multimedia__discription unstyle">
+          Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике.
+        </p>
+      </div>
       <ul class="multimedia__list unstyle">
         <li class="multimedia__item--wide multimedia__item--roud multimedia__item">
-          <img class="multimedia__item__picture" src="./img/catalog-roud.png" width="280" height="280"
-            alt="Фотография трассы при ярко-желтом закате на фоне каньонов.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-roud-desktop.jpg" width="1200" height="400">
+            <source media="(min-width: 768px)" srcset="img/catalog-roud-tablet.jpg" width="648" height="400">
+            <img class="multimedia__item__picture" src="./img/catalog-roud.jpg" width="280" height="280"
+              alt="Фотография трассы при ярко-желтом закате на фоне каньонов.">
+          </picture>
           <div class="multimedia__item__description">
-            <h3 class="multimedia__item__title">Неродные просторы</h3>
-            <p class="multimedia__item__autor">Автор фото: Борис</p>
+            <div>
+              <h3 class="multimedia__item__title unstyle">Неродные просторы</h3>
+              <p class="multimedia__item__autor multimedia__text-description unstyle">Автор фото: Борис</p>
+            </div>
             <div class="like-counter">
-              <button class="like-counter__button" type="button"></button>
-              <p class="like-counter__number">1350</p>
+              <button class="like-counter--button button" type="button"></button>
+              <p class="like-counter__number unstyle">1350</p>
             </div>
           </div>
         </li>
         <li class="multimedia__item--narrow multimedia__item--cactus multimedia__item">
-          <img class="multimedia__item__picture" src="./img/catalog-cactus.png" width="280" height="280"
-            alt="Фотография красивой дороги к северу среди хвойного леса где-то в горах Седоны.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-cactus-desktop.jpg" width="400" height="267">
+            <source media="(min-width: 768px)" srcset="img/catalog-cactus-tablet.jpg" width="324" height="267">
+            <img class="multimedia__item__picture" src="./img/catalog-cactus.jpg" width="280" height="280"
+              alt="Фотография красивой дороги к северу среди хвойного леса где-то в горах Седоны.">
+          </picture>
           <div class="multimedia__item__description">
-            <h3 class="multimedia__item__title">Местная растительность</h3>
-            <p class="multimedia__item__autor">Автор фото: Сергей</p>
+            <div>
+              <h3 class="multimedia__item__title unstyle">Местная растительность</h3>
+              <p class="multimedia__item__autor multimedia__text-description unstyle">Автор фото: Сергей</p>
+            </div>
             <div class="like-counter">
-              <button class="like-counter__button" type="button"></button>
-              <p class="like-counter__number">143</p>
+              <button class="like-counter--button button" type="button"></button>
+              <p class="like-counter__number unstyle">143</p>
             </div>
           </div>
         </li>
         <li class="multimedia__item--narrow multimedia__item--north multimedia__item">
-          <img class="multimedia__item__picture" src="./img/catalog-forest.png" width="280" height="280"
-            alt="Фотография кактуса на фоне каньонов Седоны.">
-          <div class="multimedia__item__description">
-            <h3 class="multimedia__item__title">Дорога на север</h3>
-            <p class="multimedia__item__autor">Автор фото: Петр</p>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-forest-desktop.jpg" width="400" height="267">
+            <source media="(min-width: 768px)" srcset="img/catalog-forest-tablet.jpg" width="324" height="267">
+            <img class="multimedia__item__picture" src="./img/catalog-forest.jpg" width="280" height="280"
+              alt="Фотография кактуса на фоне каньонов Седоны.">
+          </picture>
+          <div class="multimedia__item__description--north multimedia__item__description">
+            <div>
+              <h3 class="multimedia__item__title unstyle">Дорога на север</h3>
+              <p class="multimedia__item__autor multimedia__text-description unstyle">Автор фото: Петр</p>
+            </div>
             <div class="like-counter">
-              <button class="like-counter__button" type="button"></button>
-              <p class="like-counter__number">96</p>
+              <button class="like-counter--button button" type="button"></button>
+              <p class="like-counter__number unstyle">96</p>
             </div>
           </div>
         </li>
         <li class="multimedia__item--narrow multimedia__item--bridge multimedia__item">
-          <img class="multimedia__item__picture" src="./img/catalog-canyon.png" width="280" height="280"
-            alt="Фотография скальных образований красного цвета, каньонов и хвойных деревьев.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-canyon-desktop.jpg" width="400" height="267">
+            <source media="(min-width: 768px)" srcset="img/catalog-canyon-tablet.jpg" width="324" height="267">
+            <img class="multimedia__item__picture" src="./img/catalog-canyon.jpg" width="280" height="280"
+              alt="Фотография скальных образований красного цвета, каньонов и хвойных деревьев.">
+          </picture>
           <div class="multimedia__item__description">
-            <h3 class="multimedia__item__title">Мост дьявола</h3>
-            <p class="multimedia__item__autor">Автор фото: Антон</p>
+            <div>
+              <h3 class="multimedia__item__title unstyle">Мост дьявола</h3>
+              <p class="multimedia__item__autor multimedia__text-description unstyle">Автор фото: Антон</p>
+            </div>
             <div class="like-counter">
-              <button class="like-counter__button" type="button"></button>
-              <p class="like-counter__number">254</p>
+              <button class="like-counter--button button" type="button"></button>
+              <p class="like-counter__number unstyle">254</p>
             </div>
           </div>
         </li>
       </ul>
     </section>
 
-    <section class="video-blog">
-      <h2 class="video-blog__title">Все еще сомневаетесь?</h2>
-      <p class="video-blog__description">
+    <section class="video-blog block-center">
+      <h2 class="text-title--multimedia text-title unstyle">Все еще сомневаетесь?</h2>
+      <p class="text-description--video-blog text-description unstyle">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <div class="video-blog__preview"></div>
+      <a class="unstyle" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/catalog-video-desktop.jpg" width="800" height="500">
+          <source media="(min-width: 768px)" srcset="img/catalog-video-tablet.jpg" width="648" height="500">
+          <img class="video-blog__picture" src="img/catalog-video.jpg" width="280px" height="177" alt="Play video">
+        </picture>
+      </a>
     </section>
 
     <footer class="footer">
-      <p class="footer__tag">#VISITSEDONA</p>
-      <ul class="footer__social-list social-list unstyle">
+      <p class="footer__tag unstyle">#VISITSEDONA</p>
+      <ul class="social-list unstyle">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14">
+              <path fill="#fff" fill-rule="evenodd"
+                d="M23.45.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45.288 4.198 0 3.527 0H.9C.15 0 0 .347 0 .73c0 .682.89 4.07 4.145 8.551C6.315 12.341 9.37 14 12.153 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 13.216 19.403 14 20.405 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M22.4393 4.62225 19.2705 19.566c-.2392 1.0545-.8625 1.317-1.7482.8205l-4.8285-3.558-2.3295 2.241c-.258.258-.4733.4733-.97055.4733l.34725-4.917L18.6893 6.54c.3892-.3465-.0848-.53925-.6045-.192L7.02225 13.314l-4.76249-1.491c-1.03575-.3232-1.0545-1.0357.216-1.533L21.1035 3.11325c.8625-.32325 1.617.192 1.3358 1.50975v-.00075Z" />
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path fill="#fff"
+                d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8v8.3C2 17.7 3.30618 19 4.81331 19H19.1813c1.6076 0 2.8133-1.3 2.8133-2.8V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12l-6.83234 3.4Z" />
+            </svg>
+          </a>
         </li>
       </ul>
-      <div class="footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+      <div class="copyright">
+        <p class="copyright__text unstyle">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="img/html-logo.svg" alt="Лого html academy">
+          <img class="copyright__logo.svg" src="img/copyright-logo.svg" alt="Лого html academy" width="28" height="35">
         </a>
       </div>
     </footer>
