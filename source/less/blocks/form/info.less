@@ -58,16 +58,26 @@
 }
 
 .info__input--contacts {
-  background-repeat: no-repeat;
-  background-size: 58px 58px;
-  background-position: right;
+  position: relative;
 }
 
-.info__input--phone {
+.info__input--contacts::after {
+  content: "";
+  left: 0;
+  display: inline-block;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.info__input--phone::after {
   background-image: url("../../../img/phone.svg");
 }
 
-.info__input--email {
+.info__input--email::after {
   background-image: url("../../../img/email.svg");
 }
 
