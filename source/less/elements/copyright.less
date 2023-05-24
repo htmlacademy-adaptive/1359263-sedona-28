@@ -6,6 +6,14 @@
   color: @darker-color;
   margin-top: 7px;
   margin-bottom: 7px;
+
+  &:hover {
+    color: @blue;
+  }
+
+  &:disabled {
+    color: @copyright-disabled;
+  }
 }
 
 .copyright {
@@ -14,6 +22,14 @@
   justify-content: space-between;
 }
 
-.copyright__link:hover {
-  color: @blue;
+.copyright__link {
+  fill: @darker-color;
+
+  &:hover {
+    fill: @blue;
+  }
+
+  &:disabled {
+    fill: @copyright-disabled;
+  }
 }
