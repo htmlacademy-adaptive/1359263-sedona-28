@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Анжелика Нартова](https://up.htmlacademy.ru/adaptive/28/user/1359263).
-* Наставник: [Константин Антонов](https://htmlacademy.ru/profile/rawle51).
+* Наставник: [Алена Сафьянникова](https://htmlacademy.ru/profile/safyann).
 
 ---
 

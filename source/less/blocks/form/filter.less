@@ -47,31 +47,42 @@
   padding-top: 10px;
 }
 
-.filter__mark {
-  box-sizing: border-box;
+.control-mark {
   position: absolute;
   top: 2px;
   left: 0;
-  background-size: 46px 46px;
+  background-size: 22px 16px;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: @gray;
   width: 46px;
   height: 46px;
   cursor: pointer;
 }
 
-.filter__mark--feeling {
-  background-image: url("../../../img/filter-radio-button.svg");
-}
-
-.control__input[type="radio"]:checked + .filter__mark--feeling {
-  background-image: url("../../../img/filter-radio-button-check.svg");
-}
-
-.filter__mark--attraction {
-  background-image: url("../../../img/filter-box-button.svg");
-}
-
-.control__input[type="checkbox"]:checked + .filter__mark--attraction {
+.control-input[type="checkbox"]:checked + .control-mark--attraction {
   background-image: url("../../../img/filter-box-button-checked.svg");
+}
+
+.control:hover .control-mark {
+  background-color: @decorative-line;
+}
+
+.control-input:disabled + .control-mark {
+  background-color: @button-disabled;
+}
+
+.control-input[type="radio"] + .control-mark--feeling {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: calc(50% - calc(16px / 2));
+  left: calc(50% - calc(16px / 2));
+  width: 16px;
+  height: 16px;
+  background-color: @darker-color;
+  border-radius: 50%;
+  content: "";
 }
