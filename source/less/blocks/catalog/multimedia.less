@@ -128,12 +128,12 @@
 
   @media (min-width: @desktop-width) {
     min-width: 400px;
-    background-color: @darker-color;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 17px 20px 17px 25px;
     position: absolute;
     bottom: 0;
-    z-index: 5;
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -192,6 +192,10 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .multimedia__item:first-child {
@@ -202,5 +206,17 @@
     justify-content: inherit;
     border-top: none;
     padding-top: 0;
+  }
+}
+
+.multimedia__item--roud {
+  @media (min-width: @desktop-width) {
+    grid-column: -1 / 1;
+  }
+}
+
+.multimedia__item__description--roud {
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
