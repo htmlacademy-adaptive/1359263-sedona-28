@@ -116,8 +116,28 @@
   }
 }
 
-.navigation__list li:hover + .navigation--opened {
+.navigation__list li:hover {
   background-color: @blue-button-hover;
+
+  @media (min-width: @tablet-width) {
+    background-color: @primary-color;
+    color: @blue-button-hover;
+  }
+}
+
+.navigation__list li:active {
+  background-color: @blue-button-active;
+
+  @media (min-width: @tablet-width) {
+    background-color: @primary-color;
+    color: @darker-color;
+    opacity: 0.3;
+  }
+}
+
+.navigation__list li:disabled {
+  background-color: @decorative-line;
+  color: @primary-color;
 }
 
 .navigation__list li {

@@ -8,6 +8,7 @@
   color: @darker-color;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 28px;
@@ -125,5 +126,18 @@
 
   @media (min-width: @desktop-width) {
     padding-right: 63px;
+  }
+}
+
+.info__field--name::after {
+  content: "";
+  background-color: @decorative-line;
+  height: 1px;
+  display: block;
+  margin-top: 39px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
