@@ -103,6 +103,8 @@
 .info__field {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
 }
 
 .info__field--contacts {
@@ -119,6 +121,8 @@
 }
 
 .info__field--name {
+  margin-bottom: 39px;
+
   @media (min-width: @tablet-width) {
     padding-right: 43px;
     border-right: 1px solid @decorative-form;
@@ -135,7 +139,9 @@
   height: 1px;
   display: block;
   margin-top: 39px;
-  width: 100%;
+  width: calc(100% + 2 * 20px);
+  position: absolute;
+  bottom: -39px;
 
   @media (min-width: @tablet-width) {
     display: none;
