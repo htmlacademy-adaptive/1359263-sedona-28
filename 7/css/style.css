@@ -1222,6 +1222,8 @@ img {
 .info__field {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
 }
 .info__field--contacts {
   margin-top: 24px;
@@ -1236,6 +1238,9 @@ img {
   .info__field--contacts {
     padding-left: 64px;
   }
+}
+.info__field--name {
+  margin-bottom: 39px;
 }
 @media (min-width: 768px) {
   .info__field--name {
@@ -1254,7 +1259,9 @@ img {
   height: 1px;
   display: block;
   margin-top: 39px;
-  width: 100%;
+  width: calc(100% + 2 * 20px);
+  position: absolute;
+  bottom: -39px;
 }
 @media (min-width: 768px) {
   .info__field--name::after {
